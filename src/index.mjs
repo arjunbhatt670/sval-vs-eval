@@ -5,7 +5,7 @@ function runEval(code) {
   const start = Date.now();
 
   try {
-    const result = eval(code);
+    const result = eval(code + "exported;");
     return {
       result,
       time: Date.now() - start,
@@ -20,18 +20,24 @@ function runEval(code) {
 }
 
 function runSval(code) {
+  const sourceType = "module";
   const interpreter = new Sval({
     ecmaVer: 11,
     sandBox: true,
-    sourceType: "script",
+    sourceType,
   });
 
   const start = Date.now();
 
   try {
-    interpreter.run(code);
+    interpreter.run(
+      code +
+        (sourceType === "module"
+          ? "export { exported };"
+          : "exports.exported = exported;")
+    );
     return {
-      result: interpreter.exports.__output__,
+      result: interpreter.exports.exported,
       time: Date.now() - start,
     };
   } catch (error) {

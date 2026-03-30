@@ -1,11 +1,11 @@
 export const testCases = [
   {
     name: "check for strict mode",
-    code: "var isStrict = (function() {return !this; })(); exports.__output__ = isStrict;",
+    code: "var exported = (function() {return !this; })();",
   },
   {
     name: "check for strict mode (using variable assignment)",
-    code: `var isStrict = (function() { 
+    code: `var exported = (function() { 
       try {
         id_card_number = "TEST CARD";
 
@@ -14,6 +14,6 @@ export const testCases = [
         return true;
       }
 
-     })(); exports.__output__ = isStrict;`,
+     })();`,
   },
 ];
