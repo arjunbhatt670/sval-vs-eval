@@ -5,7 +5,8 @@ export const testCases = [
   },
   {
     name: "check for strict mode (using variable assignment)",
-    code: `var exported = (function() { 
+    code: `
+    var exported = (function() { 
       try {
         id_card_number = "TEST CARD";
 
@@ -14,6 +15,6 @@ export const testCases = [
         return true;
       }
 
-     })();`,
+    })();`,
   },
 ];

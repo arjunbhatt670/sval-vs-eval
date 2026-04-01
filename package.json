@@ -7,12 +7,10 @@
     "build": "parcel build ./src/index.html"
   },
   "dependencies": {
-    "sval": "0.6.9"
+    "sval": "0.6.10"
   },
   "devDependencies": {
-    "parcel": "^2.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.2.0"
+    "parcel": "^2.0.0"
   },
   "keywords": [
     "css",
