@@ -20,7 +20,7 @@ function runEval(code) {
 }
 
 function runSval(code) {
-  const sourceType = "module";
+  const sourceType = "script";
   const interpreter = new Sval({
     ecmaVer: 11,
     sandBox: true,
@@ -69,3 +69,11 @@ function main() {
 }
 
 main();
+
+// const i = new Sval({ ecmaVer: "latest", sourceType: "script", sandBox: true });
+// try {
+//   i.import({ console });
+//   i.run(`console.log(self)`);
+// } catch (e) {
+//   console.log(e.name, e.message);
+// }

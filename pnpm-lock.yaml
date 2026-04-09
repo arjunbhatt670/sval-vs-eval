@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  sval@0.6.11:
+    hash: bbbe333fb36d5eeb61ed7105eed6ffa647c7857c273d81b4692caa8d1c6c1ccd
+    path: patches/sval@0.6.11.patch
+
 importers:
 
   .:
     dependencies:
       sval:
-        specifier: 0.6.10
-        version: 0.6.10
+        specifier: 0.6.11
+        version: 0.6.11(patch_hash=bbbe333fb36d5eeb61ed7105eed6ffa647c7857c273d81b4692caa8d1c6c1ccd)
     devDependencies:
       parcel:
         specifier: ^2.0.0
@@ -805,8 +810,8 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
-  sval@0.6.10:
-    resolution: {integrity: sha512-Q1551RfjkLksFulboPkWLiL3qbFlMLrjxh/5HeQhlA0Zd3AwET7+Tt/zHlAT4qi89WzREv6sFzJpmLrqQKykqQ==}
+  sval@0.6.11:
+    resolution: {integrity: sha512-f1Km1wbbplIdcAqdfMO1m9isOsdy+AfRp2Xyya6kYK4rvrFRXB5cLDrBHeyao3bYghfKH4qUuFkBlHsapoNKDw==}
 
   term-size@2.2.1:
     resolution: {integrity: sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==}
@@ -1802,7 +1807,7 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  sval@0.6.10:
+  sval@0.6.11(patch_hash=bbbe333fb36d5eeb61ed7105eed6ffa647c7857c273d81b4692caa8d1c6c1ccd):
     dependencies:
       acorn: 8.16.0
 

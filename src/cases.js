@@ -17,4 +17,12 @@ export const testCases = [
 
     })();`,
   },
+  {
+    name: "check for 'use strict' directive",
+    code: `
+    'use strict';
+    const isStrict = (function() {return !this; })();
+    var exported = isStrict;
+    `,
+  },
 ];

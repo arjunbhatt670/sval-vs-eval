@@ -1,0 +1,541 @@
+diff --git a/dist/sval.js b/dist/sval.js
+index 356ade5039da8d0659116456d4175d749784f79b..4d10f892b843b5accc00ed0491ad5e6a1210c840 100644
+--- a/dist/sval.js
++++ b/dist/sval.js
+@@ -259,271 +259,271 @@ const He = (e) => {
+   if (!e.Object) throw 0;
+   Xe = _t(h = e).filter((t) => ["webkitStorageInfo", "GLOBAL", "root"].indexOf(t) === -1);
+ };
+-try {
+-  He(window);
+-} catch {
+-  try {
+-    He(self);
+-  } catch {
+-    try {
+-      He(global);
+-    } catch {
+-      try {
+-        He(globalThis);
+-      } catch {
+-        try {
+-          h.Object = Object;
+-        } catch {
+-        }
+-        try {
+-          h.Function = Function;
+-        } catch {
+-        }
+-        try {
+-          h.Array = Array;
+-        } catch {
+-        }
+-        try {
+-          h.Number = Number;
+-        } catch {
+-        }
+-        try {
+-          h.parseFloat = parseFloat;
+-        } catch {
+-        }
+-        try {
+-          h.parseInt = parseInt;
+-        } catch {
+-        }
+-        try {
+-          h.Infinity = 1 / 0;
+-        } catch {
+-        }
+-        try {
+-          h.NaN = NaN;
+-        } catch {
+-        }
+-        try {
+-          h.undefined = void 0;
+-        } catch {
+-        }
+-        try {
+-          h.Boolean = Boolean;
+-        } catch {
+-        }
+-        try {
+-          h.String = String;
+-        } catch {
+-        }
+-        try {
+-          h.Symbol = Symbol;
+-        } catch {
+-        }
+-        try {
+-          h.Date = Date;
+-        } catch {
+-        }
+-        try {
+-          h.Promise = Promise;
+-        } catch {
+-        }
+-        try {
+-          h.RegExp = RegExp;
+-        } catch {
+-        }
+-        try {
+-          h.Error = Error;
+-        } catch {
+-        }
+-        try {
+-          h.EvalError = EvalError;
+-        } catch {
+-        }
+-        try {
+-          h.RangeError = RangeError;
+-        } catch {
+-        }
+-        try {
+-          h.ReferenceError = ReferenceError;
+-        } catch {
+-        }
+-        try {
+-          h.SyntaxError = SyntaxError;
+-        } catch {
+-        }
+-        try {
+-          h.TypeError = TypeError;
+-        } catch {
+-        }
+-        try {
+-          h.URIError = URIError;
+-        } catch {
+-        }
+-        try {
+-          h.JSON = JSON;
+-        } catch {
+-        }
+-        try {
+-          h.Math = Math;
+-        } catch {
+-        }
+-        try {
+-          h.console = console;
+-        } catch {
+-        }
+-        try {
+-          h.Intl = Intl;
+-        } catch {
+-        }
+-        try {
+-          h.ArrayBuffer = ArrayBuffer;
+-        } catch {
+-        }
+-        try {
+-          h.Uint8Array = Uint8Array;
+-        } catch {
+-        }
+-        try {
+-          h.Int8Array = Int8Array;
+-        } catch {
+-        }
+-        try {
+-          h.Uint16Array = Uint16Array;
+-        } catch {
+-        }
+-        try {
+-          h.Int16Array = Int16Array;
+-        } catch {
+-        }
+-        try {
+-          h.Uint32Array = Uint32Array;
+-        } catch {
+-        }
+-        try {
+-          h.Int32Array = Int32Array;
+-        } catch {
+-        }
+-        try {
+-          h.Float32Array = Float32Array;
+-        } catch {
+-        }
+-        try {
+-          h.Float64Array = Float64Array;
+-        } catch {
+-        }
+-        try {
+-          h.Uint8ClampedArray = Uint8ClampedArray;
+-        } catch {
+-        }
+-        try {
+-          h.DataView = DataView;
+-        } catch {
+-        }
+-        try {
+-          h.Map = Map;
+-        } catch {
+-        }
+-        try {
+-          h.Set = Set;
+-        } catch {
+-        }
+-        try {
+-          h.WeakMap = WeakMap;
+-        } catch {
+-        }
+-        try {
+-          h.WeakSet = WeakSet;
+-        } catch {
+-        }
+-        try {
+-          h.Proxy = Proxy;
+-        } catch {
+-        }
+-        try {
+-          h.Reflect = Reflect;
+-        } catch {
+-        }
+-        try {
+-          h.BigInt = BigInt;
+-        } catch {
+-        }
+-        try {
+-          h.decodeURI = decodeURI;
+-        } catch {
+-        }
+-        try {
+-          h.decodeURIComponent = decodeURIComponent;
+-        } catch {
+-        }
+-        try {
+-          h.encodeURI = encodeURI;
+-        } catch {
+-        }
+-        try {
+-          h.encodeURIComponent = encodeURIComponent;
+-        } catch {
+-        }
+-        try {
+-          h.escape = escape;
+-        } catch {
+-        }
+-        try {
+-          h.unescape = unescape;
+-        } catch {
+-        }
+-        try {
+-          h.eval = eval;
+-        } catch {
+-        }
+-        try {
+-          h.isFinite = isFinite;
+-        } catch {
+-        }
+-        try {
+-          h.isNaN = isNaN;
+-        } catch {
+-        }
+-        try {
+-          h.SharedArrayBuffer = SharedArrayBuffer;
+-        } catch {
+-        }
+-        try {
+-          h.Atomics = Atomics;
+-        } catch {
+-        }
+-        try {
+-          h.WebAssembly = WebAssembly;
+-        } catch {
+-        }
+-        try {
+-          h.clearInterval = clearInterval;
+-        } catch {
+-        }
+-        try {
+-          h.clearTimeout = clearTimeout;
+-        } catch {
+-        }
+-        try {
+-          h.setInterval = setInterval;
+-        } catch {
+-        }
+-        try {
+-          h.setTimeout = setTimeout;
+-        } catch {
+-        }
+-        try {
+-          h.crypto = crypto;
+-        } catch {
+-        }
+-        try {
+-          h.URL = URL;
+-        } catch {
+-        }
+-        Xe = _t(h);
+-      }
+-    }
+-  }
+-}
++// try {
++//   He(window);
++// } catch {
++//   try {
++//     He(self);
++//   } catch {
++//     try {
++//       He(global);
++//     } catch {
++//       try {
++//         He(globalThis);
++//       } catch {
++//         try {
++//           h.Object = Object;
++//         } catch {
++//         }
++//         try {
++//           h.Function = Function;
++//         } catch {
++//         }
++//         try {
++//           h.Array = Array;
++//         } catch {
++//         }
++//         try {
++//           h.Number = Number;
++//         } catch {
++//         }
++//         try {
++//           h.parseFloat = parseFloat;
++//         } catch {
++//         }
++//         try {
++//           h.parseInt = parseInt;
++//         } catch {
++//         }
++//         try {
++//           h.Infinity = 1 / 0;
++//         } catch {
++//         }
++//         try {
++//           h.NaN = NaN;
++//         } catch {
++//         }
++//         try {
++//           h.undefined = void 0;
++//         } catch {
++//         }
++//         try {
++//           h.Boolean = Boolean;
++//         } catch {
++//         }
++//         try {
++//           h.String = String;
++//         } catch {
++//         }
++//         try {
++//           h.Symbol = Symbol;
++//         } catch {
++//         }
++//         try {
++//           h.Date = Date;
++//         } catch {
++//         }
++//         try {
++//           h.Promise = Promise;
++//         } catch {
++//         }
++//         try {
++//           h.RegExp = RegExp;
++//         } catch {
++//         }
++//         try {
++//           h.Error = Error;
++//         } catch {
++//         }
++//         try {
++//           h.EvalError = EvalError;
++//         } catch {
++//         }
++//         try {
++//           h.RangeError = RangeError;
++//         } catch {
++//         }
++//         try {
++//           h.ReferenceError = ReferenceError;
++//         } catch {
++//         }
++//         try {
++//           h.SyntaxError = SyntaxError;
++//         } catch {
++//         }
++//         try {
++//           h.TypeError = TypeError;
++//         } catch {
++//         }
++//         try {
++//           h.URIError = URIError;
++//         } catch {
++//         }
++//         try {
++//           h.JSON = JSON;
++//         } catch {
++//         }
++//         try {
++//           h.Math = Math;
++//         } catch {
++//         }
++//         try {
++//           h.console = console;
++//         } catch {
++//         }
++//         try {
++//           h.Intl = Intl;
++//         } catch {
++//         }
++//         try {
++//           h.ArrayBuffer = ArrayBuffer;
++//         } catch {
++//         }
++//         try {
++//           h.Uint8Array = Uint8Array;
++//         } catch {
++//         }
++//         try {
++//           h.Int8Array = Int8Array;
++//         } catch {
++//         }
++//         try {
++//           h.Uint16Array = Uint16Array;
++//         } catch {
++//         }
++//         try {
++//           h.Int16Array = Int16Array;
++//         } catch {
++//         }
++//         try {
++//           h.Uint32Array = Uint32Array;
++//         } catch {
++//         }
++//         try {
++//           h.Int32Array = Int32Array;
++//         } catch {
++//         }
++//         try {
++//           h.Float32Array = Float32Array;
++//         } catch {
++//         }
++//         try {
++//           h.Float64Array = Float64Array;
++//         } catch {
++//         }
++//         try {
++//           h.Uint8ClampedArray = Uint8ClampedArray;
++//         } catch {
++//         }
++//         try {
++//           h.DataView = DataView;
++//         } catch {
++//         }
++//         try {
++//           h.Map = Map;
++//         } catch {
++//         }
++//         try {
++//           h.Set = Set;
++//         } catch {
++//         }
++//         try {
++//           h.WeakMap = WeakMap;
++//         } catch {
++//         }
++//         try {
++//           h.WeakSet = WeakSet;
++//         } catch {
++//         }
++//         try {
++//           h.Proxy = Proxy;
++//         } catch {
++//         }
++//         try {
++//           h.Reflect = Reflect;
++//         } catch {
++//         }
++//         try {
++//           h.BigInt = BigInt;
++//         } catch {
++//         }
++//         try {
++//           h.decodeURI = decodeURI;
++//         } catch {
++//         }
++//         try {
++//           h.decodeURIComponent = decodeURIComponent;
++//         } catch {
++//         }
++//         try {
++//           h.encodeURI = encodeURI;
++//         } catch {
++//         }
++//         try {
++//           h.encodeURIComponent = encodeURIComponent;
++//         } catch {
++//         }
++//         try {
++//           h.escape = escape;
++//         } catch {
++//         }
++//         try {
++//           h.unescape = unescape;
++//         } catch {
++//         }
++//         try {
++//           h.eval = eval;
++//         } catch {
++//         }
++//         try {
++//           h.isFinite = isFinite;
++//         } catch {
++//         }
++//         try {
++//           h.isNaN = isNaN;
++//         } catch {
++//         }
++//         try {
++//           h.SharedArrayBuffer = SharedArrayBuffer;
++//         } catch {
++//         }
++//         try {
++//           h.Atomics = Atomics;
++//         } catch {
++//         }
++//         try {
++//           h.WebAssembly = WebAssembly;
++//         } catch {
++//         }
++//         try {
++//           h.clearInterval = clearInterval;
++//         } catch {
++//         }
++//         try {
++//           h.clearTimeout = clearTimeout;
++//         } catch {
++//         }
++//         try {
++//           h.setInterval = setInterval;
++//         } catch {
++//         }
++//         try {
++//           h.setTimeout = setTimeout;
++//         } catch {
++//         }
++//         try {
++//           h.crypto = crypto;
++//         } catch {
++//         }
++//         try {
++//           h.URL = URL;
++//         } catch {
++//         }
++//         Xe = _t(h);
++//       }
++//     }
++//   }
++// }
+ h.Symbol && (!h.Symbol.iterator && (h.Symbol.iterator = B("iterator")), !h.Symbol.asyncIterator && (h.Symbol.asyncIterator = B("asynciterator")));
+ const Zt = Ce({});
+ for (let e = 0; e < Xe.length; e++) {

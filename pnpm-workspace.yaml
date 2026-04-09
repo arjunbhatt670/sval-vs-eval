@@ -1,0 +1,2 @@
+patchedDependencies:
+  sval@0.6.11: patches/sval@0.6.11.patch
